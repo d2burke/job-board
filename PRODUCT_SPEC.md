@@ -641,6 +641,68 @@ AgentAssist is a **local-density marketplace**. National awareness without local
 
 Growth happens in three phases: **Ignite** (prove it works in one market), **Expand** (replicate the playbook), **Scale** (let the flywheel spin).
 
+But first — a force multiplier that accelerates every phase:
+
+---
+
+### Strategic Real Estate Partner Program
+
+AgentAssist has a relationship with a nationally recognized Real Estate Partner — a top-10 ranked team leader in America (~900 units/year), bestselling real estate author, technology evangelist, active conference speaker, contributor to the largest online agent communities, and Head Realtor in Residence at a leading RE tech company. This individual has a database of 150,000+ contacts and is deeply embedded in the real estate tech and coaching ecosystem.
+
+This is not a celebrity endorsement. This is a **co-building partnership** that seeds credibility, distribution, and product insight from day one.
+
+#### Partner Value Matrix
+
+| Asset | What It Gives Us | Activation |
+|---|---|---|
+| **Top-10 national team** (~900 units/yr) | Instant high-volume poster. Their team alone could generate 50+ tasks/month (showings, open houses, photography, TC). Proves the model at production scale. | Team onboards as Founding Poster. Exclusive "Preferred Partner" tier with reduced platform fees (8% vs 15%) for first 6 months. |
+| **Bestselling book & personal brand** | Credibility transfer. "If [Partner] uses it, it must be good." Their endorsement carries more weight than any ad spend. | Co-branded launch announcement. Quote on app store listing. Foreword or endorsement in AgentAssist content. |
+| **150K+ person database** | Direct distribution channel to engaged agents who already trust this person. One email blast = thousands of qualified eyeballs. | Co-authored email to database: "I'm using AgentAssist to run my team — here's why you should too." Exclusive invite code for their audience with bonus credits. |
+| **Head Realtor in Residence at RE tech company** | Direct relationship with a leading AI-powered lead generation platform used by thousands of agents. Potential integration partnership and co-marketing channel. | Joint webinar: "How to convert more leads by delegating showings through AgentAssist." Explore technical integration where new leads auto-trigger showing tasks. |
+| **Conference speaker & podcast circuit** | Access to stages at major RE conferences (Inman Connect, NAR, T3, etc.) and guest spots on top podcasts. Each appearance = hundreds of qualified agent impressions. | Partner mentions AgentAssist in keynotes and podcast appearances. Co-present at 2-3 conferences/year. "How I scaled to 900 units with AgentAssist" talk track. |
+| **Agent community contributor** | Active voice in the largest online RE communities (50K+ members). Organic, trusted recommendations in spaces where agents ask for tool advice. | Authentic posts about using AgentAssist. Responds to "how do you handle showings at scale?" questions with platform mention. Not scripted — genuine usage stories. |
+| **Tech-forward systems expertise** | Deep knowledge of CRM workflows, automation, and lead funnels. Uses the exact tools we're integrating with (Follow Up Boss, Zapier, etc.). | Product advisor role. Helps design integration workflows that match how real high-volume teams actually operate. Validates that our CRM integrations solve real problems. |
+| **Coaching & training audience** | Agents who follow this partner are growth-minded, systems-oriented, and willing to adopt new tools — the exact profile of our ideal early adopter. | Dedicated AgentAssist module in partner's coaching content. "Here's how to add $2K/month to your bottom line by helping other agents" training for newer agents in their orbit. |
+
+#### Partnership Structure
+
+**Tier: Strategic Founding Partner**
+
+| Term | Details |
+|---|---|
+| **Equity/advisory** | Small advisory equity grant (0.1-0.25%) vesting over 24 months. Aligns long-term incentives. |
+| **Revenue share** | 2% of platform revenue from agents who sign up through partner's referral code, for 18 months. |
+| **Reduced fees** | Partner's team pays 8% platform fee (vs. 15% standard) for first 12 months. |
+| **Product input** | Quarterly product advisory call. Priority feature requests. Beta access to all new features. |
+| **Exclusivity** | Non-exclusive. Partner can use competing tools. But they're our featured case study and launch partner. |
+| **Content commitment** | 1 social post/month, 2 podcast mentions/quarter, 1 conference mention/quarter. Authentic, not scripted. |
+| **Duration** | 24-month initial term with mutual renewal option. |
+
+#### Activation Timeline
+
+| When | What | Expected Impact |
+|---|---|---|
+| **Pre-launch (Month -2)** | Partner joins as product advisor. Tests early builds with their team. Provides feedback on task posting flow, pricing, and matching from a 900-unit/year perspective. | Product validated by power user before public launch. |
+| **Launch week (Month 1)** | Partner posts to social channels + sends email to database with exclusive invite. Co-branded launch video. | 500-1,000 agent sign-ups in first week from partner's audience alone. |
+| **Month 2** | Partner's team is fully active on platform, posting 30-50 tasks. Screenshot of their dashboard becomes marketing collateral: "See how a top-10 team uses AgentAssist." | Social proof + task volume seeding in launch market. |
+| **Month 3** | Joint webinar with partner's RE tech company: "Automate your lead-to-showing pipeline." | 200+ attendees, integration partnership exploration. |
+| **Months 4-6** | Partner speaks at 1-2 conferences. Mentions AgentAssist in podcast guest spots. Publishes "How I delegate at scale" blog post. | National awareness among tech-forward agents. Inbound interest from new markets. |
+| **Months 6-12** | Partner's referral code has driven 2,000+ sign-ups. Case study published: "[Partner's team] saved 40 hours/week and completed 500 tasks on AgentAssist." | Proven ROI story. Unlocks next tier of brokerage partnerships. |
+| **Months 12-24** | Partner helps recruit 2-3 additional industry voices as partners. "Partner Advisory Board" formalized. | Network effect among thought leaders. AgentAssist becomes the default recommendation. |
+
+#### Why This Works (And Why It's Rare)
+
+Most real estate tech companies pay for endorsements or run affiliate programs. Those feel transactional and agents see through them.
+
+This partnership works because:
+1. **The partner actually uses the product** at production scale (900 units/year). It's not hypothetical.
+2. **The partner's audience is exactly our ICP** — growth-minded, tech-forward agents who adopt tools their trusted leaders recommend.
+3. **The partner benefits directly** — their team gets help faster and cheaper, their newer agents earn income, and their brand grows as an innovator.
+4. **The content is authentic** — not scripted endorsements, but genuine stories from real usage at real volume.
+5. **The partner's tech company role** opens doors to integration partnerships and co-marketing that would take months to negotiate cold.
+
+**Conservative estimate**: This single partnership accelerates user acquisition by 3-6 months and reduces launch-market CAC by 40-60% compared to paid channels alone.
+
 ---
 
 ### Phase 1: Ignite — Single Market (Months 1-3)

@@ -1,7 +1,6 @@
 import Foundation
 
 public enum MockUsers {
-
     // MARK: - Badges
 
     private static let topRatedBadge = Badge(
@@ -14,7 +13,7 @@ public enum MockUsers {
     private static let superAgentBadge = Badge(
         id: "badge-super-agent",
         name: "Super Agent",
-        description: "Completed over 100 tasks on AgentAssist",
+        description: "Completed over 100 tasks",
         iconName: "bolt.fill"
     )
 
@@ -46,18 +45,12 @@ public enum MockUsers {
         iconName: "checkmark.seal.fill"
     )
 
-    private static let newcomerBadge = Badge(
-        id: "badge-newcomer",
-        name: "Rising Star",
-        description: "Completed first 10 tasks with great reviews",
-        iconName: "sparkles"
+    private static let newMemberBadge = Badge(
+        id: "badge-new-member",
+        name: "New Member",
+        description: "Welcome to AgentAssist!",
+        iconName: "hand.wave.fill"
     )
-
-    // MARK: - Date Helper
-
-    private static func date(monthsAgo months: Int) -> Date {
-        Calendar.current.date(byAdding: .month, value: -months, to: Date()) ?? Date()
-    }
 
     // MARK: - Users
 
@@ -66,18 +59,18 @@ public enum MockUsers {
         firstName: "Alex",
         lastName: "Morgan",
         email: "alex.morgan@compass.com",
-        phone: "(512) 555-0147",
+        phone: "(512) 555-0101",
         avatarURL: "https://randomuser.me/api/portraits/men/32.jpg",
-        bio: "Licensed real estate agent specializing in residential properties across the Austin metro area. Passionate about helping clients find their dream homes and dedicated to providing exceptional service on every transaction.",
-        licenseNumber: "TX-98234571",
+        bio: "Licensed Texas real estate agent with 8 years of experience in the Austin metro area. Specializing in residential properties and open houses. Passionate about helping clients find their dream homes.",
+        licenseNumber: "TX-98765432",
         brokerage: "Compass Real Estate",
         specialties: [.openHouse, .showing, .photography, .staging],
         rating: 4.8,
         reviewCount: 87,
         completedTasks: 95,
-        badges: [topRatedBadge, reliableBadge, quickResponderBadge],
+        badges: [topRatedBadge, superAgentBadge, quickResponderBadge, reliableBadge],
         isVerified: true,
-        joinDate: date(monthsAgo: 18)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2023, month: 3, day: 15))!
     )
 
     public static let sarah = User(
@@ -85,18 +78,18 @@ public enum MockUsers {
         firstName: "Sarah",
         lastName: "Chen",
         email: "sarah.chen@kw.com",
-        phone: "(512) 555-0293",
+        phone: "(512) 555-0202",
         avatarURL: "https://randomuser.me/api/portraits/women/44.jpg",
-        bio: "Top-producing agent with Keller Williams for over 8 years. I specialize in luxury listings and open houses across West Austin and Lakeway. Known for my attention to detail and strong negotiation skills.",
-        licenseNumber: "TX-76543210",
+        bio: "Top-producing agent at Keller Williams with a focus on luxury properties in the Austin Hills area. Known for meticulous staging and exceptional client communication.",
+        licenseNumber: "TX-11223344",
         brokerage: "Keller Williams",
-        specialties: [.openHouse, .staging, .photography, .showing],
+        specialties: [.staging, .openHouse, .photography, .showing],
         rating: 4.9,
         reviewCount: 143,
         completedTasks: 152,
-        badges: [superAgentBadge, topRatedBadge, openHouseExpertBadge, reliableBadge],
+        badges: [topRatedBadge, superAgentBadge, openHouseExpertBadge, reliableBadge],
         isVerified: true,
-        joinDate: date(monthsAgo: 30)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2022, month: 8, day: 1))!
     )
 
     public static let marcus = User(
@@ -104,37 +97,37 @@ public enum MockUsers {
         firstName: "Marcus",
         lastName: "Johnson",
         email: "marcus.j@remax.com",
-        phone: "(512) 555-0384",
+        phone: "(512) 555-0303",
         avatarURL: "https://randomuser.me/api/portraits/men/65.jpg",
-        bio: "RE/MAX Premier agent focused on South Austin and Buda communities. I pride myself on being punctual, professional, and always going the extra mile for my clients. Expert in property showings and inspections.",
-        licenseNumber: "TX-45678901",
+        bio: "Former contractor turned real estate agent. My construction background gives me a unique edge when it comes to property inspections and home evaluations.",
+        licenseNumber: "TX-55667788",
         brokerage: "RE/MAX Premier",
-        specialties: [.showing, .inspection, .signInstall, .lockbox],
+        specialties: [.inspection, .signInstall, .lockbox, .research],
         rating: 4.7,
         reviewCount: 76,
         completedTasks: 83,
-        badges: [reliableBadge, quickResponderBadge],
+        badges: [quickResponderBadge, reliableBadge],
         isVerified: false,
-        joinDate: date(monthsAgo: 14)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2023, month: 1, day: 20))!
     )
 
     public static let emily = User(
         id: "user-004",
         firstName: "Emily",
         lastName: "Rodriguez",
-        email: "emily.r@compass.com",
-        phone: "(512) 555-0471",
-        avatarURL: "https://randomuser.me/api/portraits/women/68.jpg",
-        bio: "Bilingual agent (English/Spanish) with Compass. My focus is East Austin and the rapidly growing Manor/Pflugerville corridor. I love staging and have an eye for transforming spaces that photograph beautifully.",
-        licenseNumber: "TX-23456789",
+        email: "emily.rod@compass.com",
+        phone: "(512) 555-0404",
+        avatarURL: "https://randomuser.me/api/portraits/women/28.jpg",
+        bio: "Bilingual agent fluent in English and Spanish. I specialize in helping first-time homebuyers navigate the Austin market. Photography enthusiast with a professional setup for listings.",
+        licenseNumber: "TX-33445566",
         brokerage: "Compass",
-        specialties: [.staging, .photography, .openHouse, .flyerDelivery],
+        specialties: [.photography, .showing, .flyerDelivery, .openHouse],
         rating: 4.8,
-        reviewCount: 110,
+        reviewCount: 112,
         completedTasks: 121,
-        badges: [superAgentBadge, topRatedBadge, photographyProBadge],
-        isVerified: true,
-        joinDate: date(monthsAgo: 24)
+        badges: [topRatedBadge, superAgentBadge, photographyProBadge],
+        isVerified: false,
+        joinDate: Calendar.current.date(from: DateComponents(year: 2022, month: 11, day: 10))!
     )
 
     public static let david = User(
@@ -142,18 +135,18 @@ public enum MockUsers {
         firstName: "David",
         lastName: "Kim",
         email: "david.kim@coldwellbanker.com",
-        phone: "(512) 555-0562",
-        avatarURL: "https://randomuser.me/api/portraits/men/75.jpg",
-        bio: "Coldwell Banker agent covering Round Rock and Cedar Park. Technology-driven approach to real estate with a background in architecture. I bring a unique perspective to property evaluations and inspections.",
-        licenseNumber: "TX-34567890",
+        phone: "(512) 555-0505",
+        avatarURL: "https://randomuser.me/api/portraits/men/52.jpg",
+        bio: "Tech-savvy agent with deep knowledge of the East Austin market. I leverage data analytics to help clients make informed decisions. Certified drone photographer for aerial property shots.",
+        licenseNumber: "TX-77889900",
         brokerage: "Coldwell Banker",
-        specialties: [.inspection, .photography, .research, .showing],
+        specialties: [.photography, .research, .inspection, .openHouse],
         rating: 4.6,
-        reviewCount: 58,
+        reviewCount: 59,
         completedTasks: 67,
-        badges: [reliableBadge, quickResponderBadge],
+        badges: [photographyProBadge, quickResponderBadge, reliableBadge],
         isVerified: true,
-        joinDate: date(monthsAgo: 12)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2023, month: 5, day: 8))!
     )
 
     public static let jessica = User(
@@ -161,18 +154,18 @@ public enum MockUsers {
         firstName: "Jessica",
         lastName: "Williams",
         email: "jessica.w@sothebys.com",
-        phone: "(512) 555-0653",
-        avatarURL: "https://randomuser.me/api/portraits/women/90.jpg",
-        bio: "Sotheby's International Realty specialist in luxury and estate properties. With over 200 completed tasks, I bring unmatched professionalism to every assignment. My staging consultations have helped sellers net top dollar.",
-        licenseNumber: "TX-56789012",
+        phone: "(512) 555-0606",
+        avatarURL: "https://randomuser.me/api/portraits/women/63.jpg",
+        bio: "Luxury property specialist with Sotheby's International Realty. Over 12 years in Austin real estate. Certified Home Staging Professional and relocation expert.",
+        licenseNumber: "TX-12345678",
         brokerage: "Sotheby's International Realty",
-        specialties: [.staging, .openHouse, .photography, .showing],
+        specialties: [.staging, .openHouse, .showing, .photography],
         rating: 4.9,
         reviewCount: 189,
         completedTasks: 201,
-        badges: [superAgentBadge, topRatedBadge, openHouseExpertBadge, photographyProBadge, reliableBadge],
+        badges: [topRatedBadge, superAgentBadge, openHouseExpertBadge, reliableBadge, quickResponderBadge],
         isVerified: true,
-        joinDate: date(monthsAgo: 36)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2022, month: 2, day: 14))!
     )
 
     public static let ryan = User(
@@ -180,18 +173,18 @@ public enum MockUsers {
         firstName: "Ryan",
         lastName: "O'Brien",
         email: "ryan.obrien@century21.com",
-        phone: "(512) 555-0744",
-        avatarURL: "https://randomuser.me/api/portraits/men/42.jpg",
-        bio: "Century 21 agent newer to the Austin market but bringing 5 years of experience from the Dallas-Fort Worth area. Eager to take on tasks and build my local network. Specializing in sign installs and lockbox management.",
-        licenseNumber: "TX-67890123",
+        phone: "(512) 555-0707",
+        avatarURL: "https://randomuser.me/api/portraits/men/22.jpg",
+        bio: "Newer agent with a strong work ethic and eagerness to learn. Focused on South Austin neighborhoods. Available for sign installs, lockbox changes, and flyer deliveries on short notice.",
+        licenseNumber: "TX-44556677",
         brokerage: "Century 21",
         specialties: [.signInstall, .lockbox, .flyerDelivery, .showing],
         rating: 4.5,
-        reviewCount: 39,
+        reviewCount: 38,
         completedTasks: 45,
-        badges: [newcomerBadge, quickResponderBadge],
+        badges: [quickResponderBadge, newMemberBadge],
         isVerified: false,
-        joinDate: date(monthsAgo: 8)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2024, month: 1, day: 5))!
     )
 
     public static let nina = User(
@@ -199,56 +192,56 @@ public enum MockUsers {
         firstName: "Nina",
         lastName: "Patel",
         email: "nina.patel@exprealty.com",
-        phone: "(512) 555-0835",
-        avatarURL: "https://randomuser.me/api/portraits/women/55.jpg",
-        bio: "eXp Realty agent with a strong presence in the tech corridor from Downtown to Domain. I combine market research expertise with hands-on task execution. My clients appreciate my data-driven approach to every assignment.",
-        licenseNumber: "TX-78901234",
+        phone: "(512) 555-0808",
+        avatarURL: "https://randomuser.me/api/portraits/women/35.jpg",
+        bio: "Detail-oriented agent specializing in market research and property analysis. MBA background brings a strategic approach to real estate. Expert in comparative market analysis and investment properties.",
+        licenseNumber: "TX-66778899",
         brokerage: "eXp Realty",
-        specialties: [.research, .inspection, .openHouse, .photography],
+        specialties: [.research, .inspection, .openHouse, .staging],
         rating: 4.7,
         reviewCount: 81,
         completedTasks: 88,
-        badges: [reliableBadge, topRatedBadge],
-        isVerified: true,
-        joinDate: date(monthsAgo: 16)
+        badges: [topRatedBadge, reliableBadge],
+        isVerified: false,
+        joinDate: Calendar.current.date(from: DateComponents(year: 2023, month: 6, day: 22))!
     )
 
     public static let carlos = User(
         id: "user-009",
         firstName: "Carlos",
         lastName: "Mendez",
-        email: "carlos.m@berkshire.com",
-        phone: "(512) 555-0926",
-        avatarURL: "https://randomuser.me/api/portraits/men/22.jpg",
-        bio: "Berkshire Hathaway HomeServices agent and Austin native. I know every neighborhood in this city and bring that local expertise to every task. Fluent in English and Spanish, with a specialty in open houses and community outreach.",
-        licenseNumber: "TX-89012345",
+        email: "carlos.mendez@bhhstx.com",
+        phone: "(512) 555-0909",
+        avatarURL: "https://randomuser.me/api/portraits/men/45.jpg",
+        bio: "Veteran Austin agent with deep roots in the community. Fluent in English and Spanish. Known for hosting exceptional open houses that consistently draw large crowds and generate strong offers.",
+        licenseNumber: "TX-22334455",
         brokerage: "Berkshire Hathaway HomeServices",
-        specialties: [.openHouse, .showing, .flyerDelivery, .signInstall],
+        specialties: [.openHouse, .showing, .staging, .flyerDelivery],
         rating: 4.8,
-        reviewCount: 125,
+        reviewCount: 126,
         completedTasks: 134,
-        badges: [superAgentBadge, topRatedBadge, openHouseExpertBadge, reliableBadge],
+        badges: [topRatedBadge, superAgentBadge, openHouseExpertBadge, quickResponderBadge],
         isVerified: true,
-        joinDate: date(monthsAgo: 22)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2022, month: 4, day: 30))!
     )
 
     public static let lisa = User(
         id: "user-010",
         firstName: "Lisa",
         lastName: "Thompson",
-        email: "lisa.t@remax.com",
-        phone: "(512) 555-1017",
-        avatarURL: "https://randomuser.me/api/portraits/women/33.jpg",
-        bio: "RE/MAX agent just getting started on AgentAssist. Previously worked in property management for 3 years, so I bring strong organizational skills to every task. Eager to grow my reputation on the platform.",
-        licenseNumber: "TX-90123456",
+        email: "lisa.thompson@remax.com",
+        phone: "(512) 555-1010",
+        avatarURL: "https://randomuser.me/api/portraits/women/50.jpg",
+        bio: "Part-time agent and full-time mom getting back into the real estate world. Enthusiastic about helping with showings and open houses in the Cedar Park and Round Rock areas.",
+        licenseNumber: "TX-99001122",
         brokerage: "RE/MAX",
-        specialties: [.lockbox, .signInstall, .inspection, .flyerDelivery],
+        specialties: [.showing, .openHouse, .flyerDelivery, .lockbox],
         rating: 4.4,
         reviewCount: 32,
         completedTasks: 38,
-        badges: [newcomerBadge],
+        badges: [newMemberBadge, reliableBadge],
         isVerified: false,
-        joinDate: date(monthsAgo: 5)
+        joinDate: Calendar.current.date(from: DateComponents(year: 2024, month: 3, day: 12))!
     )
 
     // MARK: - All Users

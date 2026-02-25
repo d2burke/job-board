@@ -51,7 +51,7 @@ struct ContentView: View {
             ProfileModule(
                 profileService: dependencies.profileService,
                 paymentService: dependencies.paymentService,
-                currentUser: currentUser,
+                user: currentUser,
                 onSignOut: onSignOut
             )
             .tabItem {

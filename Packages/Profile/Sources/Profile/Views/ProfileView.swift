@@ -294,7 +294,7 @@ public struct ProfileView: View {
 
     private var signOutButton: some View {
         PillButton(title: "Sign Out", style: .outline) {
-            // Sign out action handled by parent
+            viewModel.onSignOut?()
         }
         .padding(.top, AppSpacing.sm)
     }

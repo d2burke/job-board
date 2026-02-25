@@ -32,17 +32,20 @@ public final class ProfileViewModel {
 
     private let profileService: ProfileServiceProtocol
     private let paymentService: PaymentServiceProtocol
+    public var onSignOut: (() -> Void)?
 
     // MARK: - Init
 
     public init(
         profileService: ProfileServiceProtocol,
         paymentService: PaymentServiceProtocol,
-        user: User
+        user: User,
+        onSignOut: (() -> Void)? = nil
     ) {
         self.profileService = profileService
         self.paymentService = paymentService
         self.user = user
+        self.onSignOut = onSignOut
         populateEditFields()
     }
 

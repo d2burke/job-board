@@ -16,13 +16,15 @@ public struct ProfileModule: View {
     public init(
         profileService: ProfileServiceProtocol,
         paymentService: PaymentServiceProtocol,
-        user: User
+        user: User,
+        onSignOut: (() -> Void)? = nil
     ) {
         _viewModel = State(
             initialValue: ProfileViewModel(
                 profileService: profileService,
                 paymentService: paymentService,
-                user: user
+                user: user,
+                onSignOut: onSignOut
             )
         )
     }

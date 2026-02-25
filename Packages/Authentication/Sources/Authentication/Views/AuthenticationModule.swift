@@ -1,20 +1,23 @@
 import SwiftUI
+import SharedModels
 import Networking
 
 /// The root entry point for the Authentication feature module.
 ///
 /// Manages the full authentication flow from splash to authenticated state.
-/// Switch on `AuthViewModel.state` to present the appropriate screen.
+/// Calls `onAuthenticated` when the user successfully signs in or completes setup.
 public struct AuthenticationModule: View {
 
     // MARK: - State
 
     @State private var viewModel: AuthViewModel
+    private let onAuthenticated: ((User) -> Void)?
 
     // MARK: - Init
 
-    public init(authService: AuthServiceProtocol) {
+    public init(authService: AuthServiceProtocol, onAuthenticated: ((User) -> Void)? = nil) {
         _viewModel = State(initialValue: AuthViewModel(authService: authService))
+        self.onAuthenticated = onAuthenticated
     }
 
     // MARK: - Body
@@ -41,8 +44,9 @@ public struct AuthenticationModule: View {
                 case .profileSetup:
                     ProfileSetupView(viewModel: viewModel)
 
-                case .authenticated:
+                case .authenticated(let user):
                     authenticatedPlaceholder
+                        .onAppear { onAuthenticated?(user) }
                 }
             }
             .animation(.easeInOut(duration: 0.3), value: viewModel.state)
